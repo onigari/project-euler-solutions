@@ -1,5 +1,8 @@
-n = 600851475143
+# What is the largest prime factor of the number 600851475143?
+
 from math import sqrt
+
+n = 600851475143
 
 def is_prime(n) : 
   
@@ -17,8 +20,5 @@ def is_prime(n) :
         i += 6
     return True
 
-factors = [i for i in range(1, int(sqrt(n))) if n%i==0]
-
-prime_factors = [i for i in factors if is_prime(i)]
-
+prime_factors = [i for i in range(1, int(sqrt(n))) if n%i==0 and is_prime(i)]
 print(max(prime_factors))
