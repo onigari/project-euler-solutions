@@ -1,3 +1,5 @@
+# What is the 10 001st prime number?
+
 from itertools import count
 
 def prime_sequence():
